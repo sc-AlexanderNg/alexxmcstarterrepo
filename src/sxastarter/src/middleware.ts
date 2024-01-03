@@ -17,7 +17,7 @@ export const config = {
    * 6. all root files inside /public
    */
 //  matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)', ],
-  matcher: ['/', '/(.*)', ],
+  matcher: ['/', '/(.*)' ],
   
 
 };
