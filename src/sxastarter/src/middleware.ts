@@ -18,11 +18,5 @@ export const config = {
    * ori:   matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)'],
    * CS0422559 :   matcher: ['/', '/(.*)'],
    */
-  //matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)'],
-  // trying to use matcher from ironmountain in order to try to reproduce the issue on my xmcloud
-  matcher: [
-    '/',
-    '/((?!api/|_next/|healthz|sitecore/api/|-/|[\\w-]+\\.\\w+).*)',
-    //'/(.*)'
-  ],
+  matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)'],
 };
