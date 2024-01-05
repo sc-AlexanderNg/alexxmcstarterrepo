@@ -17,12 +17,14 @@ export const config = {
    * 6. all root files inside /public
    * ori:   matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)'],
    * CS0422559 :   matcher: ['/', '/(.*)'],
+   * 
+   * reproduce the issue with
+   * matcher: [
+    '/',
+    '/((?!api/|_next/|healthz|sitecore/api/|-/|[\\w-]+\\.\\w+).*)',
+  ],
    */
   //matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)'],
 
-  matcher: [
-    '/',
-    '/((?!api/|_next/|healthz|sitecore/api/|-/|[\\w-]+\\.\\w+).*)',
-    //'/(.*)'
-  ],
+  matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)'],
 };
